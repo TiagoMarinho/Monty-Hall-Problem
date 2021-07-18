@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+}
+div.metric {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 20%;
+	vertical-align: middle;
+	color: #fff;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 2em;
+	z-index: 3;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-ms-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+div.metric > p {
+	font-size: .5em;
+}
+div#switching {
+	left: 20%;
+	background: #5b4;
+	height: 0;
+	border-radius: 5px 5px 0 0;
+}
+div#staying {
+	right: 20%;
+	background: #f44;
+	height: 0;
+	border-radius: 5px 5px 0 0;
+}
+div#stats {
+	position: absolute;
+	top: 0; right: 0;
+	padding: .5em 1em;
+	background: rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(10px);
+	color: #666;
+	font-family: "Source Sans Pro", sans-serif;
+	border-radius: 0 0 0 5px;
+}
+table#grid {
+	position: fixed;
+	top: 0; left: 0; right: 0; bottom: 0;
+	width: 100%; height: 100%;
+	border-collapse: collapse;
+}
+table, td {
+	border: 2px solid #ddd;
+	z-index: 0;
+}
+tr:nth-child(even) {
+	background-color: #ebedf3;
+}
